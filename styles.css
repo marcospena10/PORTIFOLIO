@@ -1,0 +1,485 @@
+/* Porsche Website Styles */
+
+/* Global Dark Mode Styles */
+* {
+    font-family: Arial, sans-serif !important;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 0; /* Remove padding to align video with navbar */
+    line-height: 1.6;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar Styles */
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #d5001c;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 700;
+}
+
+.navbar-brand:hover {
+    color: #d5001c !important;
+}
+
+/* Hero Video Styles */
+.hero-video-container {
+    height: calc(100vh - 76px); /* Subtract navbar height */
+    min-height: 500px;
+    overflow: hidden;
+    margin-top: 76px; /* Push down by navbar height */
+}
+
+.hero-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.hero-content {
+    z-index: 3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -2px;
+}
+
+.hero-content .lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.hero-content .badge {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero-content .btn {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-content .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Styles - Dark Mode */
+.card {
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.card-text {
+    color: #cccccc;
+    font-size: 0.95rem;
+}
+
+.card-footer {
+    background-color: #2a2a2a;
+    border-top: 1px solid #333;
+}
+
+.badge {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+/* Button Styles - Dark Mode */
+.btn-dark {
+    background-color: #d5001c;
+    border-color: #d5001c;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: #b8001a;
+    border-color: #b8001a;
+    transform: translateY(-1px);
+}
+
+.btn-outline-dark {
+    border-radius: 0;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-color: #666;
+    color: #ffffff;
+}
+
+.btn-outline-dark:hover {
+    background-color: #d5001c;
+    border-color: #d5001c;
+    color: white;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #000;
+}
+
+.btn-light:hover {
+    background-color: #d5001c;
+    border-color: #d5001c;
+    color: white;
+}
+
+/* Alert Styles - Dark Mode */
+.alert {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.alert-danger {
+    background-color: #2a1a1a;
+    color: #ff6b6b;
+    border: 1px solid #d5001c;
+}
+
+/* Breadcrumb Styles - Dark Mode */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: #d5001c;
+}
+
+.breadcrumb-item.active {
+    color: #ffffff;
+}
+
+/* Modal Styles - Dark Mode */
+.modal-content {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.modal-header {
+    border-bottom: 1px solid #333;
+    background-color: #2a2a2a;
+}
+
+.modal-title {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.modal-body {
+    background-color: #1e1e1e;
+}
+
+.modal-footer {
+    background-color: #2a2a2a;
+    border-top: 1px solid #333;
+}
+
+/* Accordion Styles - Dark Mode */
+.accordion-button {
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #2a2a2a;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #d5001c;
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #d5001c;
+}
+
+.accordion-item {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+.accordion-body {
+    background-color: #1e1e1e;
+    color: #cccccc;
+}
+
+/* List Group Styles - Dark Mode */
+.list-group-item {
+    border: 1px solid #333;
+    border-radius: 8px !important;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.list-group-item:hover {
+    background-color: #2a2a2a;
+    transform: translateX(5px);
+}
+
+.list-group-item-action:hover {
+    background-color: #2a2a2a;
+    color: #d5001c;
+}
+
+/* Progress Bar Styles */
+.progress {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.progress-bar {
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Section Spacing - Dark Mode */
+section {
+    padding: 60px 0;
+}
+
+section.bg-light {
+    background-color: #1a1a1a !important;
+}
+
+/* Typography - Dark Mode */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.display-4 {
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.lead {
+    color: #cccccc;
+}
+
+/* Footer - Dark Mode */
+footer {
+    margin-top: 0;
+    background-color: #0a0a0a !important;
+}
+
+/* Form Styles - Dark Mode */
+.form-control {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #ffffff;
+}
+
+.form-control:focus {
+    background-color: #2a2a2a;
+    border-color: #d5001c;
+    color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgba(213, 0, 28, 0.25);
+}
+
+.form-select {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #ffffff;
+}
+
+.form-select:focus {
+    background-color: #2a2a2a;
+    border-color: #d5001c;
+    color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgba(213, 0, 28, 0.25);
+}
+
+.form-label {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content .lead {
+        font-size: 1.2rem;
+    }
+
+    .hero-video-container {
+        height: calc(100vh - 56px); /* Adjust for smaller navbar on mobile */
+        min-height: 400px;
+        margin-top: 56px; /* Smaller navbar height on mobile */
+    }
+
+    .hero-video {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content .lead {
+        font-size: 1rem;
+    }
+
+    .hero-content .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .btn-group .btn {
+        border-radius: 4px !important;
+        margin-bottom: 5px;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Effects */
+.card, .list-group-item, .btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Tab Image Styles */
+.tab-image {
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 8px 8px 0 0;
+}
+
+.tab-image.active {
+    opacity: 1;
+}
+
+.tab-content {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tab-content.active {
+    opacity: 1;
+}
+
+/* Button Group Enhanced */
+.btn-group .btn-check:checked + .btn-outline-dark {
+    background-color: #d5001c;
+    border-color: #d5001c;
+    color: white;
+}
+
+.btn-group .btn-outline-dark:hover {
+    background-color: #d5001c;
+    border-color: #d5001c;
+    color: white;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

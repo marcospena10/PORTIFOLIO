@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 1. NAVBAR Component -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                PORSCHE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gt3rs">GT3 RS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="hero-video-container position-relative">
+        <video class="hero-video w-100" autoplay loop muted>
+            <source src="images/1.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="hero-content position-absolute top-50 start-50 translate-middle text-center text-white">
+            <span class="badge bg-danger mb-3 px-3 py-2 fs-6">NOVO</span>
+            <h1 class="display-2 fw-bold mb-3">Porsche 911 GT3 RS</h1>
+            <p class="lead fs-4 mb-4">Performance sem compromisso</p>
+            <button class="btn btn-light btn-lg px-4 py-3" data-bs-toggle="modal" data-bs-target="#gt3rsModal">
+                Saiba Mais
+            </button>
+        </div>
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+    </div>
+    <!-- 3. ALERT Component -->
+    <div class="container mt-4">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="bi bi-lightning-fill me-2"></i>
+            <strong>Lançamento!</strong> O novo Porsche 911 GT3 RS chegou. Agende seu test drive exclusivo.
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+    <section id="gt3rs" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4">Porsche 911 GT3 RS</h2>
+            <p class="text-center lead mb-5">A expressão máxima da engenharia Porsche para as ruas</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/2.jpg" class="card-img-top" alt="911 GT3 RS Performance">
+                        <div class="card-body">
+                            <h5 class="card-title">Performance</h5>
+                            <p class="card-text">Motor 4.0L boxer de 6 cilindros naturalmente aspirado com 525 cv de potência.</p>
+                            <span class="badge bg-danger mb-2">525 cv</span>
+                            <span class="badge bg-warning mb-2">3.2s 0-100</span>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#performanceModal">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/3.jpg" class="card-img-top" alt="911 GT3 RS Aerodinâmica">
+                        <div class="card-body">
+                            <h5 class="card-title">Aerodinâmica</h5>
+                            <p class="card-text">Aerofólio traseiro ativo e difusor otimizado para máximo downforce.</p>
+                            <span class="badge bg-primary mb-2">Ativo</span>
+                            <span class="badge bg-success mb-2">Carbono</span>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#aeroModal">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/4.jpg" class="card-img-top" alt="911 GT3 RS Interior">
+                        <div class="card-body">
+                            <h5 class="card-title">Interior Racing</h5>
+                            <p class="card-text">Bancos bucket em carbono, gaiola antitorção e volante Alcantara.</p>
+                            <span class="badge bg-dark mb-2">Racing</span>
+                            <span class="badge bg-secondary mb-2">Carbono</span>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#interiorModal">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Modelos</a></li>
+                <li class="breadcrumb-item"><a href="#">911</a></li>
+                <li class="breadcrumb-item active">GT3 RS</li>
+            </ol>
+        </nav>
+    </div>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">Configurações do 911 GT3 RS</h3>
+
+            <!-- Button Group -->
+            <div class="text-center mb-4">
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-dark" for="btnradio1" onclick="showImage('performance')">Performance</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="btnradio2" onclick="showImage('aero')">Aerodinâmica</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="btnradio3" onclick="showImage('interior')">Interior</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="btnradio4" onclick="showImage('exterior')">Exterior</label>
+                </div>
+            </div>
+
+            <!-- Image Display Area -->
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow-lg border-0">
+                        <div class="position-relative">
+                            <!-- Performance Image -->
+                            <img src="images/2.jpg" class="card-img-top tab-image active" id="performance-img" alt="911 GT3 RS Performance" style="height: 400px; object-fit: cover;">
+
+                            <!-- Aerodinâmica Image -->
+                            <img src="images/3.jpg" class="card-img-top tab-image" id="aero-img" alt="911 GT3 RS Aerodinâmica" style="height: 400px; object-fit: cover; display: none;">
+
+                            <!-- Interior Image -->
+                            <img src="images/4.jpg" class="card-img-top tab-image" id="interior-img" alt="911 GT3 RS Interior" style="height: 400px; object-fit: cover; display: none;">
+
+                            <!-- Exterior Image -->
+                            <img src="images/5.jpg" class="card-img-top tab-image" id="exterior-img" alt="911 GT3 RS Exterior" style="height: 400px; object-fit: cover; display: none;">
+                        </div>
+
+                        <div class="card-body text-center">
+                            <!-- Performance Info -->
+                            <div class="tab-content active" id="performance-content">
+                                <h5 class="card-title">Performance Excepcional</h5>
+                                <p class="card-text">Motor 4.0L boxer naturalmente aspirado com 525 cv de potência pura. Aceleração de 0-100 km/h em apenas 3,2 segundos.</p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <span class="badge bg-danger">525 cv</span>
+                                    <span class="badge bg-warning">3.2s 0-100</span>
+                                    <span class="badge bg-success">296 km/h</span>
+                                </div>
+                            </div>
+
+                            <!-- Aerodinâmica Info -->
+                            <div class="tab-content" id="aero-content" style="display: none;">
+                                <h5 class="card-title">Aerodinâmica Ativa</h5>
+                                <p class="card-text">Aerofólio traseiro ativo DRS e difusor em carbono geram até 409 kg de downforce a 200 km/h para máxima aderência.</p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <span class="badge bg-primary">DRS Ativo</span>
+                                    <span class="badge bg-success">409 kg Downforce</span>
+                                    <span class="badge bg-dark">Carbono</span>
+                                </div>
+                            </div>
+
+                            <!-- Interior Info -->
+                            <div class="tab-content" id="interior-content" style="display: none;">
+                                <h5 class="card-title">Interior Racing</h5>
+                                <p class="card-text">Bancos bucket em fibra de carbono, volante GT em Alcantara e gaiola antitorção para a experiência de pista definitiva.</p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <span class="badge bg-dark">Racing</span>
+                                    <span class="badge bg-secondary">Carbono</span>
+                                    <span class="badge bg-warning">Alcantara</span>
+                                </div>
+                            </div>
+
+                            <!-- Exterior Info -->
+                            <div class="tab-content" id="exterior-content" style="display: none;">
+                                <h5 class="card-title">Design Exterior</h5>
+                                <p class="card-text">Linhas agressivas, entradas de ar otimizadas e elementos aerodinâmicos que combinam forma e função perfeitamente.</p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <span class="badge bg-info">Agressivo</span>
+                                    <span class="badge bg-success">Funcional</span>
+                                    <span class="badge bg-primary">Icônico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. MODAL Component -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h3 class="mb-4">Configure seu 911 GT3 RS</h3>
+            <p class="lead mb-4">Personalize seu 911 GT3 RS com as opções disponíveis.</p>
+            <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#configModal">
+                Configurar GT3 RS
+            </button>
+        </div>
+    </section>
+
+    <!-- Main GT3 RS Modal -->
+    <div class="modal fade" id="gt3rsModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Porsche 911 GT3 RS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-danger" style="width: 100%">525 cv</div>
+                    </div>
+                    <p><strong>O novo 911 GT3 RS é a expressão máxima da engenharia Porsche para as ruas.</strong></p>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Motor 4.0L boxer naturalmente aspirado</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>525 cv de potência</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>0-100 km/h em 3.2 segundos</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Velocidade máxima: 296 km/h</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Configuration Modal -->
+    <div class="modal fade" id="configModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Configure seu 911 GT3 RS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="color" class="form-label">Cor Exterior</label>
+                            <select class="form-select" id="color">
+                                <option>Branco Carrara</option>
+                                <option>Preto Jet</option>
+                                <option>Vermelho Carmin</option>
+                                <option>Azul Shark</option>
+                                <option>Laranja Lava</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="interior" class="form-label">Interior</label>
+                            <select class="form-select" id="interior">
+                                <option>Preto com Alcantara</option>
+                                <option>Vermelho Racing</option>
+                                <option>Carbono Weissach</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="wheels" class="form-label">Rodas</label>
+                            <select class="form-select" id="wheels">
+                                <option>20" Magnesium Forjado</option>
+                                <option>20" Carbono Weissach</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-dark">Solicitar Cotação</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8. ACCORDION Component -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">Especificações do 911 GT3 RS</h3>
+            <div class="accordion" id="gt3rsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEngine">
+                            Motor e Performance
+                        </button>
+                    </h2>
+                    <div id="collapseEngine" class="accordion-collapse collapse show" data-bs-parent="#gt3rsAccordion">
+                        <div class="accordion-body">
+                            <strong>Motor 4.0L Boxer de 6 cilindros naturalmente aspirado.</strong>
+                            <ul class="mt-2">
+                                <li>Potência: 525 cv (386 kW) a 8.500 rpm</li>
+                                <li>Torque: 465 Nm a 6.300 rpm</li>
+                                <li>Aceleração 0-100 km/h: 3,2 segundos</li>
+                                <li>Velocidade máxima: 296 km/h</li>
+                                <li>Transmissão PDK de 7 velocidades</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAero">
+                            Aerodinâmica e Chassi
+                        </button>
+                    </h2>
+                    <div id="collapseAero" class="accordion-collapse collapse" data-bs-parent="#gt3rsAccordion">
+                        <div class="accordion-body">
+                            <strong>Aerodinâmica ativa para máximo downforce.</strong>
+                            <ul class="mt-2">
+                                <li>Aerofólio traseiro ativo DRS</li>
+                                <li>Difusor traseiro em carbono</li>
+                                <li>Suspensão adaptativa PASM</li>
+                                <li>Eixo traseiro direcional</li>
+                                <li>Gaiola antitorção integrada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInterior">
+                            Interior Racing
+                        </button>
+                    </h2>
+                    <div id="collapseInterior" class="accordion-collapse collapse" data-bs-parent="#gt3rsAccordion">
+                        <div class="accordion-body">
+                            <strong>Interior focado na experiência de pilotagem.</strong>
+                            <ul class="mt-2">
+                                <li>Bancos bucket em fibra de carbono</li>
+                                <li>Volante GT em Alcantara</li>
+                                <li>Cintos de segurança de 6 pontos</li>
+                                <li>Cluster de instrumentos analógico</li>
+                                <li>Sistema de som Bose opcional</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. LIST GROUP Component -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="mb-3">Opcionais GT3 RS</h4>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Pacote Weissach</h5>
+                                <small class="text-muted">R$ 180.000</small>
+                            </div>
+                            <p class="mb-1">Redução de peso com componentes em fibra de carbono e magnésio.</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Gaiola Antitorção</h5>
+                                <small class="text-muted">R$ 45.000</small>
+                            </div>
+                            <p class="mb-1">Estrutura de segurança em aço para uso em pista.</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Sistema de Extinção</h5>
+                                <small class="text-muted">R$ 25.000</small>
+                            </div>
+                            <p class="mb-1">Sistema automático de extinção de incêndio para competições.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">Recordes e Conquistas</h4>
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Nürburgring Nordschleife</h5>
+                                <small>6:49.328</small>
+                            </div>
+                            <p class="mb-1">Recorde de volta para carros de produção com motor aspirado.</p>
+                        </div>
+                        <div class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Laguna Seca</h5>
+                                <small>1:20.17</small>
+                            </div>
+                            <p class="mb-1">Tempo de volta mais rápido que muitos supercars.</p>
+                        </div>
+                        <div class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Spa-Francorchamps</h5>
+                                <small>2:17.47</small>
+                            </div>
+                            <p class="mb-1">Performance excepcional no circuito belga.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. PROGRESS Component -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <h3 class="text-center mb-5">Performance do 911 GT3 RS</h3>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Potência</h5>
+                    <div class="progress mb-2" style="height: 25px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 87%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
+                            525 cv
+                        </div>
+                    </div>
+                    <small class="text-muted">386 kW a 8.500 rpm</small>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Aceleração 0-100 km/h</h5>
+                    <div class="progress mb-2" style="height: 25px;">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                            3.2s
+                        </div>
+                    </div>
+                    <small class="text-muted">Com Launch Control</small>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Velocidade Máxima</h5>
+                    <div class="progress mb-2" style="height: 25px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+                            296 km/h
+                        </div>
+                    </div>
+                    <small class="text-muted">Limitada eletronicamente</small>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <h5>Torque</h5>
+                    <div class="progress mb-2" style="height: 25px;">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                            465 Nm
+                        </div>
+                    </div>
+                    <small class="text-muted">a 6.300 rpm</small>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Peso</h5>
+                    <div class="progress mb-2" style="height: 25px;">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
+                            1.450 kg
+                        </div>
+                    </div>
+                    <small class="text-muted">Peso a seco</small>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Downforce</h5>
+                    <div class="progress mb-2" style="height: 25px;">
+                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            409 kg
+                        </div>
+                    </div>
+                    <small class="text-muted">a 200 km/h</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Modals for Cards -->
+    <!-- Performance Modal -->
+    <div class="modal fade" id="performanceModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Performance do 911 GT3 RS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Motor 4.0L Boxer Naturalmente Aspirado</h6>
+                    <ul>
+                        <li>Potência: 525 cv (386 kW) a 8.500 rpm</li>
+                        <li>Torque: 465 Nm a 6.300 rpm</li>
+                        <li>Redline: 9.000 rpm</li>
+                        <li>Transmissão: PDK de 7 velocidades</li>
+                        <li>Tração: Traseira</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aerodynamics Modal -->
+    <div class="modal fade" id="aeroModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aerodinâmica do 911 GT3 RS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Sistema Aerodinâmico Ativo</h6>
+                    <ul>
+                        <li>Aerofólio traseiro ativo com DRS</li>
+                        <li>Downforce máximo: 409 kg a 200 km/h</li>
+                        <li>Difusor traseiro em fibra de carbono</li>
+                        <li>Splitter frontal agressivo</li>
+                        <li>Entradas de ar laterais otimizadas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interior Modal -->
+    <div class="modal fade" id="interiorModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Interior Racing do 911 GT3 RS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Cockpit Focado na Performance</h6>
+                    <ul>
+                        <li>Bancos bucket em fibra de carbono</li>
+                        <li>Volante GT em Alcantara com botões</li>
+                        <li>Cintos de segurança de 6 pontos</li>
+                        <li>Gaiola antitorção integrada</li>
+                        <li>Cluster analógico com conta-giros central</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Porsche Brasil. Todos os direitos reservados.</p>
+            <p>Site criado com Bootstrap - 10 Componentes utilizados - Focado no 911 GT3 RS</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript for Tab Functionality -->
+    <script>
+        function showImage(tab) {
+            // Hide all images
+            const images = document.querySelectorAll('.tab-image');
+            images.forEach(img => {
+                img.style.display = 'none';
+                img.classList.remove('active');
+            });
+
+            // Hide all content
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.style.display = 'none';
+                content.classList.remove('active');
+            });
+
+            // Show selected image and content
+            const selectedImage = document.getElementById(tab + '-img');
+            const selectedContent = document.getElementById(tab + '-content');
+
+            if (selectedImage) {
+                selectedImage.style.display = 'block';
+                selectedImage.classList.add('active');
+            }
+
+            if (selectedContent) {
+                selectedContent.style.display = 'block';
+                selectedContent.classList.add('active');
+            }
+        }
+
+        // Initialize with performance tab active
+        document.addEventListener('DOMContentLoaded', function() {
+            showImage('performance');
+        });
+    </script>
+</body>
+</html>
